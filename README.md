@@ -65,7 +65,7 @@ delete all the scaffolding code and then rerun the scaffold command
 I am not sure how to fix this because I checked the tutorial and they did the same thing...
 
 
-[Wednesday, Oct 13, 2021]
+***[Wednesday, Oct 13, 2021]***
 
 *4:00pm*
 
@@ -100,7 +100,7 @@ nav menu blends into the background, so I added some css to give it a white back
 javascript/jquery, but to keep it simple I decided to just crop them manually
 
 
-[Thursday, Oct 14, 2021]
+***[Thursday, Oct 14, 2021]***
 
 *1:00am*
 
