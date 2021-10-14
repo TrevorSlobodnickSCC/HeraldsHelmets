@@ -1,4 +1,9 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿@font-face{
+    font-family: "Baloo Bhaijaan";
+    src: url(fonts/BalooBhaijaan.ttf) format('truetype');
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
@@ -7,15 +12,108 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+
+
+
+
+
+/* MY STYLES - Start */
+
+/*
+    Color Palette
+maya-blue: #7dcaff
+green-blue-crayola: #3e92ccff
+lapis-lazuli: #2a628fff
+prussian-blue: #13293dff
+prussian-blue-2: #16324fff
+indigo-dye: #18435aff
+*/
+
+header, footer {
+    background-color: #13293dff;
 }
 
+body {
+    background-color: #2a628fff;
+    color: rgb(245, 245, 245) !important;
+    font-family: Helvetica, Verdana, Arial, sans-serif !important;
+}
+
+a {
+    color: #7dcaff !important;
+}
+
+/* Styles related to brand name link at top left */
+a.navbar-brand{
+    color: white !important;
+}
+
+h1 {
+    font-family: "Baloo Bhaijaan", fantasy, sans-serif;
+}
+
+/* Text that should appear grayed out*/
+.text-muted {
+    color: #bbbdbf !important;
+}
+
+/* Overrides the color style of the table class, all text should be offwhite */
+.table {
+    color: rgb(245, 245, 245) !important;
+}
+
+/* The nav uses an svg as a background image, so no styles can change the line color, therefor just change the background color */
+.navbar-toggler{
+    background-color: white;
+}
+
+#home-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-wrapper{
+    width: 30%;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+#cta-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.primary-cta {
+    background-color: #18435aff;
+    padding: 1.2em 1em;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+
+.primary-cta:hover {
+    box-shadow: 1px 1px 0.2em #7dcaff, -1px -1px 0.2em #7dcaff;
+    text-decoration: none;
+}
+
+/* MY STYLES - End */
+
+
+
+
+/* Provide sufficient contrast against white background */
+/*a {
+  color: #0366d6;
+}*/
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
