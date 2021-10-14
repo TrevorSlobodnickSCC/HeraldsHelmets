@@ -108,3 +108,13 @@ javascript/jquery, but to keep it simple I decided to just crop them manually
 
 - Fixed an issue with the button on the home page where it would overlap the images,
 did this by putting it inside of a div
+
+*5:00pm*
+
+- Published the project to azure
+
+- After looking through each page (on azure), I noticed that the Helmets page gives an error rather than
+displaying the products, currently trying to figure out how to debug this
+
+- I also noticed the dev tools mentioned that the font file couldnt be found, this was due to an incorrect
+path, which has now been fixed
