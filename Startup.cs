@@ -22,6 +22,7 @@ namespace HeraldsHelmets
         {
             Environment = env;
             Configuration = configuration;
+            //env.EnvironmentName = "Development";
             //Culture info should fix the currency issue
             CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-us"); //https://stackoverflow.com/a/46165148
         }
@@ -44,17 +45,17 @@ namespace HeraldsHelmets
             services.AddDbContext<MvcHelmetContext>(options =>
                     options.UseSqlite(Configuration.GetConnectionString("MvcHelmetContext")));
 
-            services.AddDbContext<MvcHelmetContext>(options =>
-            {
-                if (Environment.IsDevelopment())
-                {
-                    options.UseSqlite(Configuration.GetConnectionString("MvcHelmetContext"));
-                }
-                else
-                {
-                    options.UseSqlServer(Configuration.GetConnectionString("MvcHelmetContext"));
-                }
-            });
+            //services.AddDbContext<MvcHelmetContext>(options =>
+            //{
+            //    if (Environment.IsDevelopment())
+            //    {
+            //        options.UseSqlite(Configuration.GetConnectionString("MvcHelmetContext"));
+            //    }
+            //    else
+            //    {
+            //        options.UseSqlServer(Configuration.GetConnectionString("MvcHelmetContext"));
+            //    }
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

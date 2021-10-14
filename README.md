@@ -118,3 +118,17 @@ displaying the products, currently trying to figure out how to debug this
 
 - I also noticed the dev tools mentioned that the font file couldnt be found, this was due to an incorrect
 path, which has now been fixed
+
+*5:00pm*
+
+- I think the error I am getting is because tof the environment change, in my Startup.cs I say to use SqLite
+for development and SqlServer for everything else, I am going to try using SqLite nomatter what environment and
+see if that resolves the issue
+
+- It did not resolve the issue itself, so I temporarily did what asp suggested and forced the "Developer"
+environment, which gave me more info on the error. It said that the Helmets table could not be found and
+I needed to apply the migrations. After apply the migration and republishing, the error disappeared and I
+could see all the records
+
+- I republished again to remove the code that force the "Development" environment, but didn't change
+anything with the database (still using SqLite rather than SqlServer)
